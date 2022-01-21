@@ -1,3 +1,10 @@
-* {
+body {
+  text-align: center;
+  maring: 0;
   background-color: #121212;
+}
+
+
+.profile-card {
+
 }
