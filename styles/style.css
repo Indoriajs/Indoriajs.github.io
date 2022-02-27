@@ -12,6 +12,20 @@ body {
 }
 
 
+.header {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
+  background-color: #457B9D;
+  box-shadow: 10px 10px 10px #121212;
+}
+
+.header div {
+  padding: 0.5em 0em;
+  border: 1px solid black;
+}
+
+
 .profile-card {
   margin: 1em 1em;
   display: grid;
