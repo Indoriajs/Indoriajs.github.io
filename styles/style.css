@@ -8,7 +8,7 @@ body {
   margin: 0;
   height: 100%;
   overflow-x: hidden;
-  background-color: #F1FAEE;
+  background-color: #121221;
 }
 
 
@@ -16,7 +16,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
-  background-color: #457B9D;
+  /* background-color: #457B9D; */
   box-shadow: 10px 10px 10px #121212;
 }
 
@@ -30,18 +30,25 @@ body {
   margin: 1em 1em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
-  background-color: #1D3557;
-  box-shadow: 10px 10px 10px #121212;
+  background-color: #121211;
+  box-shadow: 5px 5px 5px #F1FAEE;
 }
 
 .contact {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(15px, 1fr));
+  /* box-shadow: 5px 5px 5px #F1FAEE; */
 }
 
-.contact > div:first-child {
-  font-weight: bolder;
-  font-size: 2.5em;
+.contact div {
+  padding: 0em 1em;
+  font-size: medium;
+}
+
+.contact div p span {
+  padding: 2em;
+  font-size: xx-large;
+  color: gold;
 }
 
 .contact div {
@@ -51,7 +58,7 @@ body {
 
 .education-card {
   margin: 1em 1em;
-  background-color: #457B9D;
+  /* background-color: #457B9D; */
   box-shadow: 10px 10px 10px #121212;
   padding: 1em 0em;
 }
@@ -77,7 +84,7 @@ body {
 .project-card {
   margin: 1em 1em;
   padding: 1em;
-  background-color: #E63946;
+  /* background-color: #E63946; */
   box-shadow: 10px 10px 10px #121212;
 }
 
@@ -97,7 +104,7 @@ body {
 .exp-card {
   margin: 1em 1em;
   padding: 1em;
-  background-color: #E63946;
+  /* background-color: #E63946; */
   box-shadow: 10px 10px 10px #121212;
 }
 
@@ -117,7 +124,7 @@ body {
 .skill-card {
   margin: 1em 1em;
   padding: 1em;
-  background-color: #E63946;
+  /* background-color: #E63946; */
   box-shadow: 10px 10px 10px #121212;
 }
 
@@ -142,7 +149,7 @@ body {
 .lang-card {
   margin: 1em 1em;
   padding: 1em;
-  background-color: #E63946;
+  /* background-color: #E63946; */
   box-shadow: 10px 1px 10px #121212;
 }
 
