@@ -67,7 +67,7 @@ body {
 .education-card > div:first-child {
   text-align: start;
   margin-left: 1em;
-  font-size: larger;
+  font-size: calc(1vw + 1vh);
   font-weight: bolder;
 }
 
@@ -75,13 +75,14 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
   margin: 1em 0;
+  font-size: calc(1vw + 1vh);
 }
 
 .education-details > div {
-  background-color: #3A3A3A;  
+  background-color: #2020207c;  
   padding: 2em 0;
-  border-left: 1px solid white;
-  box-shadow: 2px 2px 2px #F1FAEE;
+  /* border-left: 1px solid white; */
+  box-shadow: 5px 5px 5px #000000;
 }
 
 .education-details span {
@@ -99,7 +100,7 @@ body {
 .project-card > div:first-child {
   text-align: start;
   margin-left: 1em;
-  font-size: larger;
+  font-size: calc(1vw + 1vh);
   font-weight: bolder;
 }
 
@@ -107,10 +108,11 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
   margin: 2em 0;
-  color: #06185B;
-  font-weight: bolder;
-  font-size: large;
-  background-color: #969696;
+  min-height: 5em;
+  font-weight: bold;
+  font-size: calc(1vw + 1vh);
+  background-color: #2020207c;
+  box-shadow: 10px 10px 10px #121212;
 }
 
 .exp-card {
@@ -123,7 +125,7 @@ body {
 .exp-card > div:first-child {
   text-align: start;
   margin-left: 1em;
-  font-size: larger;
+  font-size: calc(1vw + 1vh);
   font-weight: bolder;
 }
 
@@ -143,7 +145,7 @@ body {
 .skill-card > div:first-child {
   text-align: start;
   margin-left: 1em;
-  font-size: larger;
+  font-size: calc(1vw + 1vh);
   font-weight: bolder;
 }
 
@@ -153,10 +155,14 @@ body {
 }
 
 .skill-card ul li {
-  margin: 0;
-  padding: 1em 0;
+  margin: 1em;
+  padding: 1em 1em;
   text-align: start;
+  background-color: #2020207c;
+  box-shadow: 5px 5px 5px #000000;
 }
+
+
 
 .lang-card {
   margin: 1em 1em;
@@ -168,7 +174,7 @@ body {
 .lang-card > div:first-child {
   text-align: start;
   margin-left: 1em;
-  font-size: larger;
+  font-size: calc(1vw + 1vh);
   font-weight: bolder;
 }
 
@@ -178,7 +184,9 @@ body {
 }
 
 .lang-card ul li {
-  margin: 0;
-  padding: 1em 0;
+  margin: 1em;
+  padding: 1em 1em;
   text-align: start;
+  background-color: #2020207c;
+  box-shadow: 5px 5px 5px #000000;
 }
