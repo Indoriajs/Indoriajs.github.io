@@ -12,7 +12,10 @@ body {
   background-image: url("/res/mike-hindle-dbCUv9Lu7Hs-unsplash.jpg");
 }
 
-
+/*
+    Begin of Header
+    Headers|: This controls the title bar of the webpage.
+*/
 .header {
   position: fixed;
   width: 100%;
@@ -50,46 +53,16 @@ body {
   animation: slide-in 0.5s ease 1, color-change 0.5s forwards ease 1;
 }
 
-@keyframes header-hover {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes slide-in {
-  from {
-    top : -75%;
-  }
-  to {
-    top: 0;
-  }
-}
-
-@keyframes slide-out {
-  from {
-    top: 0;
-  }
-  to {
-    top: -75%;
-  }
-}
-
-@keyframes color-change {
-  from {
-    background: #F1FAEE;
-  }
-  to {
-    background: #202020;
-  }
-}
 
 
+/*
+  End of Header
+*/
+
+
+/*
+  Begin of Profile card
+*/
 .profile-card {
   margin: 1em 1em;
   display: grid;
@@ -97,7 +70,9 @@ body {
   background-color: #202020;
   color: #F1FAEE;
   box-shadow: 10px 10px 10px #121212;
+  animation: fade-in 1s linear 1;
 }
+
 
 .contact {
   display: grid;
@@ -108,12 +83,23 @@ body {
 .contact div {
   padding: 0em 1em;
   font-size: medium;
+  border-radius: 15%;
 }
 
 .contact div p span {
   padding: 2em;
   font-size: xx-large;
-  color: gold;
+}
+
+.contact div p span{
+  background-image: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 1px #ffd700,
+               0 0 5px #daa520,
+               0 0 7px #b8860b,
+               0 0 10px #f5deb3;
 }
 
 .contact div {
@@ -254,4 +240,32 @@ body {
   text-align: start;
   background-color: #2020207c;
   box-shadow: 5px 5px 5px #000000;
+}
+
+
+
+@keyframes header-hover {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 100%;}
+}
+
+@keyframes slide-in {
+  from { top : -75%; }
+  to { top: 0; }
+}
+
+@keyframes slide-out {
+  from { top: 0; }
+  to { top: -75%; }
+}
+
+@keyframes color-change {
+  from { background: #F1FAEE; }
+  to { background: #202020; }
 }
