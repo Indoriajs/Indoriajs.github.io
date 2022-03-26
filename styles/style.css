@@ -8,21 +8,85 @@ body {
   margin: 0;
   height: 100%;
   overflow-x: hidden;
-  background-color: #F1FAEE;
+  font-size: calc(1vw + 1vh);
+  background-image: url("/res/mike-hindle-dbCUv9Lu7Hs-unsplash.jpg");
 }
 
 
 .header {
-  margin: 0;
+  position: fixed;
+  width: 100%;
+  margin: -1em 0em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
-  background-color: #3A3A3A;
-  box-shadow: 10px 10px 10px #121212;
+  background: transparent;
 }
 
 .header div {
+  position: relative;
+  top: -75%;
   padding: 0.5em 0em;
   border: 1px solid black;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  height: 10vh;
+  background-color: #3A3A3A;
+  font-size: calc(0.7vw + 0.7vh);
+  background: linear-gradient(86deg, rgba(0, 0, 0,1) 0%, rgb(63, 61, 61) 6%, rgba(255, 255, 255,1) 100%);
+	background-size: 400% 400%;
+	animation: header-hover 5s ease infinite alternate,
+             slide-out 0.5s ease 1;
+}
+
+.header div span {
+  position: absolute;
+  bottom: 25%;
+  left: 25%;
+  right: 25%;
+}
+
+.header div:hover {
+  top: 0;
+  animation: slide-in 0.5s ease 1, color-change 0.5s forwards ease 1;
+}
+
+@keyframes header-hover {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    top : -75%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    top: 0;
+  }
+  to {
+    top: -75%;
+  }
+}
+
+@keyframes color-change {
+  from {
+    background: #F1FAEE;
+  }
+  to {
+    background: #202020;
+  }
 }
 
 
@@ -67,7 +131,6 @@ body {
 .education-card > div:first-child {
   text-align: start;
   margin-left: 1em;
-  font-size: calc(1vw + 1vh);
   font-weight: bolder;
 }
 
@@ -75,7 +138,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
   margin: 1em 0;
-  font-size: calc(1vw + 1vh);
+  
 }
 
 .education-details > div {
@@ -100,7 +163,7 @@ body {
 .project-card > div:first-child {
   text-align: start;
   margin-left: 1em;
-  font-size: calc(1vw + 1vh);
+  
   font-weight: bolder;
 }
 
@@ -110,7 +173,7 @@ body {
   margin: 2em 0;
   min-height: 5em;
   font-weight: bold;
-  font-size: calc(1vw + 1vh);
+  
   background-color: #2020207c;
   box-shadow: 10px 10px 10px #121212;
 }
@@ -125,7 +188,7 @@ body {
 .exp-card > div:first-child {
   text-align: start;
   margin-left: 1em;
-  font-size: calc(1vw + 1vh);
+  
   font-weight: bolder;
 }
 
@@ -133,6 +196,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15px, 1fr));
   margin: 2em 0;
+  background-color: #202020;
+  box-shadow: 10px 10px 10px #121212;
 }
 
 .skill-card {
@@ -145,7 +210,7 @@ body {
 .skill-card > div:first-child {
   text-align: start;
   margin-left: 1em;
-  font-size: calc(1vw + 1vh);
+  
   font-weight: bolder;
 }
 
@@ -174,7 +239,7 @@ body {
 .lang-card > div:first-child {
   text-align: start;
   margin-left: 1em;
-  font-size: calc(1vw + 1vh);
+  
   font-weight: bolder;
 }
 
